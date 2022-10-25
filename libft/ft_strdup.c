@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: eduardo <eduardo@student.42.fr>            +#+  +:+       +#+        */
+/*   By: eduarodr <eduarodr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 12:56:21 by eduardo           #+#    #+#             */
-/*   Updated: 2022/10/25 14:05:14 by eduardo          ###   ########.fr       */
+/*   Updated: 2022/10/25 15:28:33 by eduarodr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,8 @@
 
 char *strdup(const char *s)
 {
+	char *a;
+
+	a = ((char*)malloc(ft_strlen(s) * 2 + 1)
 
 }
