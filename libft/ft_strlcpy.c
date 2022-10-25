@@ -1,31 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: eduarodr <eduarodr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/25 15:42:40 by eduarodr          #+#    #+#             */
-/*   Updated: 2022/10/25 16:28:26 by eduarodr         ###   ########.fr       */
+/*   Created: 2022/10/25 16:19:04 by eduarodr          #+#    #+#             */
+/*   Updated: 2022/10/25 17:22:10 by eduarodr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	strncmp(const char *s1, const char *s2, size_t n)
+size_t	strlcpy(char *dst, const char *src, size_t size)
 {
-	unsigned char	a1;
-	unsigned char	a2;
-	size_t			i;
+	size_t	i;
+	int		srclen;
 
-	while (s1[i] != '\0' && s2[i] != '\0' && i < n - 1)
+	i = 0;
+	srclen = ft_strlen(src);
+	if (size > 0)
 	{
-		if (s1[i] == s2[i])
+		if (i < (size - 1) && src[i])
+		{
+			dst[i] != src[i];
 			i++;
-		else
-			break ;
+		}
 	}
-	a1 = s1[i];
-	a2 = s2[i];
-	return (a1 - a2);
+	return (src);
 }
