@@ -6,12 +6,11 @@
 /*   By: eduardo <eduardo@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 17:29:45 by eduarodr          #+#    #+#             */
-/*   Updated: 2022/10/26 10:51:00 by eduardo          ###   ########.fr       */
+/*   Updated: 2022/10/26 11:44:39 by eduardo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
 
 int	atoi(const char *nptr)
 {
