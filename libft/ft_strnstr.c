@@ -6,14 +6,13 @@
 /*   By: eduardo <eduardo@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 16:02:01 by eduarodr          #+#    #+#             */
-/*   Updated: 2022/10/26 11:27:28 by eduardo          ###   ########.fr       */
+/*   Updated: 2022/10/26 14:12:31 by eduardo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 char	*strnstr(const char *big, const char *little, size_t len)
-
 {
 	size_t	i;
 	size_t	j;
