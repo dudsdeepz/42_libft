@@ -6,13 +6,13 @@
 /*   By: eduardo <eduardo@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 12:56:21 by eduardo           #+#    #+#             */
-/*   Updated: 2022/10/26 12:51:16 by eduardo          ###   ########.fr       */
+/*   Updated: 2022/10/26 16:08:14 by eduardo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*strdup(const char *s)
+char	*ft_strdup(const char *s)
 {
 	char	*a;
 	size_t	i;

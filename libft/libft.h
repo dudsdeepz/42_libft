@@ -6,7 +6,7 @@
 /*   By: eduardo <eduardo@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 19:50:34 by eduardo           #+#    #+#             */
-/*   Updated: 2022/10/26 14:39:11 by eduardo          ###   ########.fr       */
+/*   Updated: 2022/10/26 16:13:28 by eduardo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,14 +34,14 @@ int	ft_tolower(int c);
 void	ft_bzero(void *s, size_t n);
 
 void	*ft_memset(void *s, int c, size_t n);
-
-char	*strchr(const char *s, int c);
-char	*strdup(const char *s);
-char	*strnstr(const char *big, const char *little, size_t len);
+char	*ft_strchr(const char *s, int c);
+char	*ft_strdup(const char *s);
+char	*ft_strnstr(const char *big, const char *little, size_t len);
 int	ft_strncmp(const char *s1, const char *s2, size_t n);
 size_t	ft_strlen(const char *str);
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 size_t	ft_strlen(const char *str);
+void	*ft_calloc(size_t nmemb, size_t size);
 
 #endif
