@@ -6,7 +6,7 @@
 #    By: eduardo <eduardo@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/24 20:18:20 by eduardo           #+#    #+#              #
-#    Updated: 2022/10/24 20:57:01 by eduardo          ###   ########.fr        #
+#    Updated: 2022/10/26 11:26:36 by eduardo          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,6 +26,8 @@ RM	=	rm -f
 
 CFLAGS	=	-Wall -Werror -Wextra -I.
 
+.c: *.c
+	$(CC) $(CFLAGS)-c $(SRC)
 
 all:	$(NAME)
 
