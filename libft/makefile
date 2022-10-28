@@ -6,7 +6,7 @@
 #    By: eduarodr <eduarodr@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/24 20:18:20 by eduardo           #+#    #+#              #
-#    Updated: 2022/10/28 17:46:51 by eduarodr         ###   ########.fr        #
+#    Updated: 2022/10/28 18:35:32 by eduarodr         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -51,8 +51,8 @@ all:	$(NAME)
 $(NAME):	$(OBJ)
 		ar rcs $(NAME) $(OBJ)
 
-libft.so: $(OBJ)
-		$(LINK.c) -shared $^ -o $@
+so:
+	$(CC) -shared -o libft.so $(OBJ)
 
 clean:
 	$(RM) $(OBJ)
