@@ -6,7 +6,7 @@
 #    By: eduarodr <eduarodr@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/24 20:18:20 by eduardo           #+#    #+#              #
-#    Updated: 2022/10/28 18:35:32 by eduarodr         ###   ########.fr        #
+#    Updated: 2022/10/28 18:39:02 by eduarodr         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,6 +29,7 @@ SRC	=	ft_strlcat.c\
 		ft_strlcpy.c\
 		ft_strnstr.c\
 		ft_toupper.c\
+		ft_tolower.c\
 		ft_strdup.c\
 		ft_strchr.c\
 		ft_strrchr.c\
@@ -37,7 +38,9 @@ OBJ	=	$(SRC:.c=.o)
 
 NAME	=	libft.a
 
-CC      =	cc
+CC	=	cc
+
+SO	=	libft.so
 
 RM	=	rm -f
 
@@ -52,7 +55,7 @@ $(NAME):	$(OBJ)
 		ar rcs $(NAME) $(OBJ)
 
 so:
-	$(CC) -shared -o libft.so $(OBJ)
+	$(CC) -shared -o $(SO) $(OBJ)
 
 clean:
 	$(RM) $(OBJ)
