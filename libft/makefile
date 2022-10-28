@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: eduardo <eduardo@student.42.fr>            +#+  +:+       +#+         #
+#    By: eduarodr <eduarodr@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/24 20:18:20 by eduardo           #+#    #+#              #
-#    Updated: 2022/10/26 16:16:49 by eduardo          ###   ########.fr        #
+#    Updated: 2022/10/28 17:46:51 by eduarodr         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,12 +31,13 @@ SRC	=	ft_strlcat.c\
 		ft_toupper.c\
 		ft_strdup.c\
 		ft_strchr.c\
+		ft_strrchr.c\
 
 OBJ	=	$(SRC:.c=.o)
 
 NAME	=	libft.a
 
-CC      =	gcc
+CC      =	cc
 
 RM	=	rm -f
 
@@ -49,6 +50,9 @@ all:	$(NAME)
 
 $(NAME):	$(OBJ)
 		ar rcs $(NAME) $(OBJ)
+
+libft.so: $(OBJ)
+		$(LINK.c) -shared $^ -o $@
 
 clean:
 	$(RM) $(OBJ)

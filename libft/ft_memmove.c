@@ -3,10 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: eduardo <eduardo@student.42.fr>            +#+  +:+       +#+        */
+/*   By: eduarodr <eduarodr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 14:16:59 by eduardo           #+#    #+#             */
-/*   Updated: 2022/10/26 14:16:59 by eduardo          ###   ########.fr       */
+/*   Updated: 2022/10/28 17:06:45 by eduarodr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
+void *ft_memmove(void *dest, const void *src, size_t n)
+{
+
+}
