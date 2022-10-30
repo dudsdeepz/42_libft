@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: eduarodr <eduarodr@student.42.fr>          +#+  +:+       +#+        */
+/*   By: eduardo <eduardo@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 14:16:59 by eduardo           #+#    #+#             */
-/*   Updated: 2022/10/28 18:09:00 by eduarodr         ###   ########.fr       */
+/*   Updated: 2022/10/30 17:21:27 by eduardo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,16 +17,21 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	char	*a;
 	char	*b;
 
-	a = (char *)src;
-	b = dest;
-	if (a == b || n == 0)
+	b = (char *) dest;
+	a = (char *) src;
+	if (a != b)
 	{
-		while (n--)
-		{
-			a[n] = b[n];
-		}
+		ft_memcpy(b, a, n);
+		return (dest);
+	}
+	else if (src < dest)
+	{
+		a[n - 1] = b[n - 1];
+		n--;
 	}
 	else
-		ft_memcpy(b, a, n);
+		while (n--)
+			a = b;
 	return (dest);
 }
+

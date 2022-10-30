@@ -6,7 +6,7 @@
 /*   By: eduardo <eduardo@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 16:02:01 by eduarodr          #+#    #+#             */
-/*   Updated: 2022/10/26 16:08:37 by eduardo          ###   ########.fr       */
+/*   Updated: 2022/10/30 17:25:24 by eduardo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	size_t	i;
 	size_t	j;
 
-	if (!big || !little)
-		return (NULL);
 	if (!little || !little[0])
 		return ((char *)big);
 	i = 0;

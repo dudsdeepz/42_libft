@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: eduarodr <eduarodr@student.42.fr>          +#+  +:+       +#+         #
+#    By: eduardo <eduardo@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/24 20:18:20 by eduardo           #+#    #+#              #
-#    Updated: 2022/10/28 18:39:02 by eduarodr         ###   ########.fr        #
+#    Updated: 2022/10/30 20:46:13 by eduardo          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,6 +33,16 @@ SRC	=	ft_strlcat.c\
 		ft_strdup.c\
 		ft_strchr.c\
 		ft_strrchr.c\
+		ft_substr.c\
+		ft_strjoin.c\
+		ft_strtrim.c\
+		ft_split.c\
+		ft_itoa.c\
+		ft_strmapi.c\
+		ft_putchar_fd.c\
+		ft_putstr_fd.c\
+		ft_putendl_fd.c\
+		ft_putnbr_fd.c\
 
 OBJ	=	$(SRC:.c=.o)
 
@@ -62,6 +72,9 @@ clean:
 
 fclean:	clean
 		$(RM) $(NAME)
+
+soclean:	clean
+		$(RM) $(OBJ) $(SO) $(NAME)
 
 re:	fclean $(NAME)
 
