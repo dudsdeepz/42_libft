@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: eduardo <eduardo@student.42.fr>            +#+  +:+       +#+        */
+/*   By: eduarodr <eduarodr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/30 12:16:41 by eduardo           #+#    #+#             */
-/*   Updated: 2022/10/30 14:49:03 by eduardo          ###   ########.fr       */
+/*   Updated: 2022/10/31 14:07:44 by eduarodr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	size_t	i2;
 	size_t	ss1;
 	size_t	ss2;
-
 
 	ss1 = ft_strlen(s1);
 	ss2 = ft_strlen(s2);

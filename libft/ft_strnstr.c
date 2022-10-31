@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: eduardo <eduardo@student.42.fr>            +#+  +:+       +#+        */
+/*   By: eduarodr <eduarodr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 16:02:01 by eduarodr          #+#    #+#             */
-/*   Updated: 2022/10/30 17:25:24 by eduardo          ###   ########.fr       */
+/*   Updated: 2022/10/31 10:36:39 by eduarodr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,5 +30,5 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 			return ((char *)(big + i));
 		i++;
 	}
-	return (0);
+	return (NULL);
 }

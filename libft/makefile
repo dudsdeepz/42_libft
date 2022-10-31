@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: eduardo <eduardo@student.42.fr>            +#+  +:+       +#+         #
+#    By: eduarodr <eduarodr@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/24 20:18:20 by eduardo           #+#    #+#              #
-#    Updated: 2022/10/30 20:46:13 by eduardo          ###   ########.fr        #
+#    Updated: 2022/10/31 14:29:55 by eduarodr         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -43,6 +43,7 @@ SRC	=	ft_strlcat.c\
 		ft_putstr_fd.c\
 		ft_putendl_fd.c\
 		ft_putnbr_fd.c\
+		ft_striteri.c\
 
 OBJ	=	$(SRC:.c=.o)
 
