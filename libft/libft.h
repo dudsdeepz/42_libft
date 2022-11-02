@@ -6,7 +6,7 @@
 /*   By: eduarodr <eduarodr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 19:50:34 by eduardo           #+#    #+#             */
-/*   Updated: 2022/10/31 15:52:09 by eduarodr         ###   ########.fr       */
+/*   Updated: 2022/11/02 15:23:07 by eduarodr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,9 @@ void	*ft_memchr(const void *s, int c, size_t n);
 void	ft_putchar_fd(char c, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putstr_fd(char *s, int fd);
+void	ft_putnbr_fd(int n, int fd);
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 char	*ft_itoa(int n);
+char	*ft_strmapi(char *s, char (*f)(unsigned int, char));
 
 #endif

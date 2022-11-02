@@ -6,8 +6,13 @@
 /*   By: eduarodr <eduarodr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/30 17:18:09 by eduardo           #+#    #+#             */
-/*   Updated: 2022/10/31 12:23:04 by eduarodr         ###   ########.fr       */
+/*   Updated: 2022/11/02 16:07:20 by eduarodr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+static int	wcount(const char *str)
+{
+	
+}
