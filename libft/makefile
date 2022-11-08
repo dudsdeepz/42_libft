@@ -6,7 +6,7 @@
 #    By: eduarodr <eduarodr@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/24 20:18:20 by eduardo           #+#    #+#              #
-#    Updated: 2022/10/31 14:29:55 by eduarodr         ###   ########.fr        #
+#    Updated: 2022/11/08 11:43:35 by eduarodr         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,7 +45,19 @@ SRC	=	ft_strlcat.c\
 		ft_putnbr_fd.c\
 		ft_striteri.c\
 
+BONUS = 	ft_lstnew.c\
+			ft_lstadd_front.c\
+			ft_lstsize.c\
+			ft_lstlast.c\
+			ft_lstadd_back.c\
+			ft_lstdelone.c\
+			ft_lstclear.c\
+			ft_lstiter.c\
+			ft_lstmap.c\
+
 OBJ	=	$(SRC:.c=.o)
+
+B_OBJ = $(BONUS:.c=.o)
 
 NAME	=	libft.a
 
@@ -63,7 +75,7 @@ CFLAGS	=	-Wall -Werror -Wextra -I.
 all:	$(NAME)
 
 $(NAME):	$(OBJ)
-		ar rcs $(NAME) $(OBJ)
+		ar rcs $(NAME) $(OBJ) $(B_OBJ)
 
 so:
 	$(CC) -shared -o $(SO) $(OBJ)
