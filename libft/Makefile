@@ -1,12 +1,12 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    makefile                                           :+:      :+:    :+:    #
+#    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: eduarodr <eduarodr@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/24 20:18:20 by eduardo           #+#    #+#              #
-#    Updated: 2022/11/08 11:43:35 by eduarodr         ###   ########.fr        #
+#    Updated: 2022/11/08 17:23:35 by eduarodr         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,7 +45,7 @@ SRC	=	ft_strlcat.c\
 		ft_putnbr_fd.c\
 		ft_striteri.c\
 
-BONUS = 	ft_lstnew.c\
+#BONUS = 	ft_lstnew.c\
 			ft_lstadd_front.c\
 			ft_lstsize.c\
 			ft_lstlast.c\
@@ -69,16 +69,10 @@ RM	=	rm -f
 
 CFLAGS	=	-Wall -Werror -Wextra -I.
 
-.c: *.c
-	$(CC) $(CFLAGS)-c - o $(SRC)
-
 all:	$(NAME)
 
 $(NAME):	$(OBJ)
-		ar rcs $(NAME) $(OBJ) $(B_OBJ)
-
-so:
-	$(CC) -shared -o $(SO) $(OBJ)
+		ar rcs $(NAME) $(OBJ)
 
 clean:
 	$(RM) $(OBJ)
@@ -86,9 +80,9 @@ clean:
 fclean:	clean
 		$(RM) $(NAME)
 
-soclean:	clean
-		$(RM) $(OBJ) $(SO) $(NAME)
-
 re:	fclean $(NAME)
+
+#bonus:	$(OBJ)	$(B_OBJ)
+#		ar rcs $(NAME)	$(OBJ)	$(B_OBJ)
 
 .PHONY: all clean fclean re

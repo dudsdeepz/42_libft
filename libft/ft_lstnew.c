@@ -6,7 +6,7 @@
 /*   By: eduarodr <eduarodr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 11:45:30 by eduarodr          #+#    #+#             */
-/*   Updated: 2022/11/08 14:55:14 by eduarodr         ###   ########.fr       */
+/*   Updated: 2022/11/08 17:12:13 by eduarodr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,12 @@
 
 t_list	*ft_lstnew(void *content)
 {
-	struct node
-	{
-		int new;
-	struct node*next;
-}
+	t_list	*new;
 
+	new = (t_list *)malloc(sizeof(*new));
+	if (!new)
+		return (NULL);
+	new->content = content;
+	new->next = NULL;
+	return (new);
 }
