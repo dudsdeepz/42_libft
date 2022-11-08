@@ -6,7 +6,7 @@
 /*   By: eduarodr <eduarodr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/31 14:28:38 by eduarodr          #+#    #+#             */
-/*   Updated: 2022/11/02 15:22:02 by eduarodr         ###   ########.fr       */
+/*   Updated: 2022/11/08 18:28:31 by eduarodr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,12 +22,9 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 	int	i;
 
 	i = 0;
-	if (s && f)
-	{
 		while (s[i])
 		{
 			f(i, &s[i]);
 			i++;
 		}
-	}
 }
