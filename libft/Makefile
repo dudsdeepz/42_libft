@@ -6,7 +6,7 @@
 #    By: eduarodr <eduarodr@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/24 20:18:20 by eduardo           #+#    #+#              #
-#    Updated: 2022/11/08 17:23:35 by eduarodr         ###   ########.fr        #
+#    Updated: 2022/11/10 14:43:29 by eduarodr         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,7 +45,7 @@ SRC	=	ft_strlcat.c\
 		ft_putnbr_fd.c\
 		ft_striteri.c\
 
-#BONUS = 	ft_lstnew.c\
+BONUS = 	ft_lstnew.c\
 			ft_lstadd_front.c\
 			ft_lstsize.c\
 			ft_lstlast.c\
@@ -82,7 +82,7 @@ fclean:	clean
 
 re:	fclean $(NAME)
 
-#bonus:	$(OBJ)	$(B_OBJ)
-#		ar rcs $(NAME)	$(OBJ)	$(B_OBJ)
+bonus:	$(OBJ)	$(B_OBJ)
+		ar rcs $(NAME)	$(OBJ)	$(B_OBJ)
 
 .PHONY: all clean fclean re
